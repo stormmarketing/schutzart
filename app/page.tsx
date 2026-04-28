@@ -85,3 +85,44 @@ export default function Home() {
     </main>
   );
 }
+<section className="bg-white py-16">
+  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+
+    <img
+      src="/images/nm-ipo-trondheim.jpg"
+      alt="NM IPO Trondheim"
+      className="rounded-xl"
+    />
+
+    <div>
+      <h2 className="text-3xl font-semibold mb-4 text-[#2e3a2f]">
+        Om oss
+      </h2>
+
+      <p className="mb-4">
+        Kennel SchutzArt drives av Tom Thoresen og Laila Gulbrandsøy, og holder til i Sandefjord.
+      </p>
+
+      <p className="mb-4">
+        Vi har begge over 30 års erfaring med hund, trening og konkurranse.
+      </p>
+
+      <p className="mb-4">
+        Gjennom årene har vi jobbet med Dobermann, Malinois, Schæfer og Border Collie – både innen trening, konkurranse og avl.
+      </p>
+
+      <p className="mb-4">
+        Tom har konkurrert på NM- og VM-nivå med Dobermann og Malinois, og oppnådde blant annet Beste Lydighet under Dobermann NM.
+      </p>
+
+      <p className="mb-4">
+        Laila har hatt fokus på unghundtrening og avl, med mål om å utvikle sunne og stabile hunder.
+      </p>
+
+      <p className="italic text-sm text-gray-500">
+        Førsteplass under NM IPO II i Trondheim
+      </p>
+
+    </div>
+  </div>
+</section>
