@@ -1,41 +1,52 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f7f3ea] text-[#263524]">
+    <main style={{ fontFamily: "Arial", background: "#fbf8f1" }}>
+      
+      {/* NAV */}
+      <div style={{ display: "flex", justifyContent: "space-between", padding: "20px 6%" }}>
+        <img src="/images/logo.jpeg" style={{ width: 90 }} />
+        <button style={{ background: "#435837", color: "white", padding: "12px 20px", borderRadius: 8 }}>
+          Kontakt oss
+        </button>
+      </div>
 
-      <section className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 md:grid-cols-2">
+      {/* HERO */}
+      <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", alignItems: "center", padding: "40px 6%" }}>
         
-        {/* TEKST */}
         <div>
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-[#66724a]">
-            Malinois · Cockapoo
-          </p>
-
-          <h1 className="mb-6 max-w-xl text-5xl font-serif leading-tight md:text-7xl">
-            Hunder med hjerte, helse og harmoni
+          <h1 style={{ fontSize: 60, fontFamily: "Georgia", color: "#30442d" }}>
+            Malinois & Cockapoo med kvalitet
           </h1>
-
-          <p className="mb-8 max-w-lg text-lg leading-8">
-            Kennel SchutzArt driver målrettet oppdrett av malinois som sports- og tjenestehund,
-            og cockapoo som aktive familiehunder. Helse, mentalitet og trygg oppfølging står i fokus.
+          <p>
+            Kennel SchutzArt driver seriøst oppdrett med fokus på helse, gemytt og sterke egenskaper.
           </p>
-
-          <a
-            href="#om-oss"
-            className="inline-block rounded-lg bg-[#4f5f35] px-7 py-4 text-sm font-bold uppercase tracking-widest text-white"
-          >
-            Les mer om oss
-          </a>
         </div>
 
-        {/* BILDE */}
-        <div className="flex justify-center">
-          <img
-            src="/images/cockapoo.png"
-            alt="Cockapoo"
-            className="max-w-md w-full"
-          />
-        </div>
+        <img src="/images/cockapoo-hero.jpg" style={{ width: "100%", borderRadius: 20 }} />
+      </section>
 
+      {/* HUNDER */}
+      <section style={{ padding: "60px 6%" }}>
+        <h2 style={{ fontSize: 40, fontFamily: "Georgia" }}>Møt våre 4-beinte</h2>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20, marginTop: 30 }}>
+          
+          <div>
+            <img src="/images/nm-ipo.jpg" style={{ width: "100%", borderRadius: 20 }} />
+            <h3>Sansa</h3>
+          </div>
+
+          <div>
+            <img src="/images/cockapoo-1.png" style={{ width: "100%", borderRadius: 20 }} />
+            <h3>Freia</h3>
+          </div>
+
+          <div>
+            <img src="/images/malinois-natur.jpg" style={{ width: "100%", borderRadius: 20 }} />
+            <h3>Malinois</h3>
+          </div>
+
+        </div>
       </section>
 
     </main>
