@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { scroll-behavior: smooth; }
+body { background: #fbf8f1; color: #2b241f; }
+.soft-edge { mask-image: linear-gradient(to bottom, black 86%, transparent 100%); }
